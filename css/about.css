@@ -1,0 +1,181 @@
+@import url('variables.css');
+
+
+/* Section About */
+.about-section {
+    background-color: var(--color-secondary-bg);
+    padding: var(--spacing-xlarge) var(--spacing-medium);
+  }
+  
+  .about-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-large); /* Ajout d'un espacement entre les blocs */
+  }
+  
+  .about-image {
+    flex: 1;
+    min-width: 300px; /* Pour un bon comportement responsive */
+    max-width: 800px;
+  }
+  
+  .about-image img {
+    max-width: 100%;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast); /* Animation au survol */
+  }
+  
+  .about-image img:hover {
+    transform: scale(1.05);
+    box-shadow: var(--box-shadow-hover); /* Ombre légèrement plus marquée au survol */
+  }
+  
+  .about-text {
+    flex: 2;
+    max-width: 600px;
+  }
+  
+  .about-text h1 {
+    font-family: var(--font-primary);
+    font-size: 3rem;
+    color: var(--color-primary-text);
+    margin-bottom: var(--spacing-medium);
+  }
+  
+  .about-text p {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-large);
+    line-height: 1.8; /* Espacement plus aéré */
+    margin-bottom: var(--spacing-medium);
+    color: var(--color-secondary-text);
+  }
+  
+  .about-text em {
+    font-style: italic;
+    color: var(--color-accent);
+  }
+  
+  .about-text .btn {
+    display: inline-block;
+    padding: var(--spacing-small) var(--spacing-large);
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: bold;
+    font-family: var(--font-sans);
+    border-radius: var(--border-radius);
+    transition: background-color var(--transition-fast), transform var(--transition-fast);
+  }
+  
+  .about-text .btn:hover {
+    background-color: var(--color-link-hover);
+    color: var(--color-bg);
+    transform: translateY(-3px); /* Effet de survol légèrement en relief */
+  }
+  
+  
+  /* Section Skills */
+  .skills-section {
+    background-color: var(--color-bg);
+    padding: var(--spacing-xlarge) var(--spacing-medium);
+  }
+  .skills-section .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-large);
+  }
+  .skill-item {
+    background-color: var(--color-secondary-bg);
+    padding: var(--spacing-large);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    transition: transform var(--transition-fast), box-shadow var(--transition-fast);
+  }
+  .skill-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  .skill-item h3 {
+    color: var(--color-link-hover);
+    margin-bottom: var(--spacing-small);
+    font-family: var(--font-primary);
+  }
+  .skill-item p {
+    font-size: var(--font-size-base);
+    font-family: var(--font-secondary);
+    color: var(--color-secondary-text);
+  }
+  
+  /* Section Vision & Mission */
+  .vision-mission {
+    background: linear-gradient(135deg, var(--color-link), var(--color-link-hover));
+    color: var(--color-bg);
+    padding: var(--spacing-xlarge) var(--spacing-medium);
+    text-align: center;
+  }
+  .vision-mission p {
+    font-family: var(--font-secondary);
+    font-size: var(--font-size-large);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-medium);
+  }
+  
+  /* Section Testimonials */
+  .testimonials-section {
+    background-color: var(--color-secondary-bg);
+    padding: var(--spacing-xlarge) var(--spacing-medium);
+  }
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-large);
+  }
+  .testimonial {
+    background-color: var(--color-bg);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-large);
+    box-shadow: var(--box-shadow);
+    text-align: left;
+    position: relative;
+  }
+  .testimonial:before {
+    content: "“";
+    font-size: 4rem;
+    color: var(--color-link-hover);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: -1;
+    opacity: 0.1;
+  }
+  .testimonial p {
+    font-size: var(--font-size-base);
+    line-height: 1.6;
+    font-family: var(--font-secondary);
+    color: var(--color-secondary-text);
+  }
+  .testimonial .author {
+    margin-top: var(--spacing-small);
+    font-weight: bold;
+    font-family: var(--font-primary);
+    color: var(--color-link-hover);
+  }
+  
+  /* Global Styles */
+  .section-title {
+    font-size: var(--font-size-title);
+    font-family: var(--font-primary);
+    color: var(--color-link-hover);
+    text-align: center;
+    margin-bottom: var(--spacing-large);
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-medium);
+  }
+  

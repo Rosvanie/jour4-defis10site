@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Accueil</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+
+    <!-- Lien vers les styles CSS -->
+    <link rel="stylesheet" href="../css/contact.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="top-header">
+        <div class="header-content">
+            <div class="left-info">
+                <span class="location"><i class="fa-solid fa-location-dot"></i> Dakar, Sénégal</span>
+                <span class="phone"><i class="fa-solid fa-phone-volume"></i> +221 77 123 4567</span>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navbar Section -->
+    <nav class="main-navbar mobile">
+      <div class="navbar-content">
+        <div class="logo">Mon Blog</div>
+        <div class="nav-links mobile">
+          <a href="../index.html">Accueil</a>
+          <a href="about.html">À propos</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html" class="active">Contact</a>
+        </div>
+        <button class="hamburger" aria-label="Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </nav>
+
+
+    <section class="contact-section">
+        <div class="container">
+          <h1 class="section-title">Contactez-moi</h1>
+          <p class="intro-text">
+            Vous avez une question, une proposition de collaboration ou simplement envie de discuter mode ? 
+            Remplissez le formulaire ci-dessous, et je vous répondrai avec plaisir !
+          </p>
+          
+          <div class="contact-form-wrapper">
+            <form action="#" method="POST" class="contact-form">
+              <div class="form-group">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" placeholder="Votre nom" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" placeholder="Votre adresse email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Sujet :</label>
+                <input type="text" id="subject" name="subject" placeholder="Sujet de votre message" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn">Envoyer</button>
+            </form>
+          </div>
+          
+          
+          <div class="contact-info">
+            <h2>Mes Coordonnées</h2>
+            <ul>
+              <li><strong>Email :</strong> <a href="mailto:contact@monblogmode.com">contact@monblogmode.com</a></li>
+              <li><strong>Téléphone :</strong> <a href="tel:+33612345678">+33 6 12 34 56 78</a></li>
+              <li><strong>Instagram :</strong> <a href="https://instagram.com/monblogmode" target="_blank">@monblogmode</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+  
+
+  
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Mon Blog. Tous droits réservés.</p>
+        <div class="footer-links">
+          <a href="#">Politique de confidentialité</a>
+          <a href="#">Conditions d'utilisation</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+    <script src="../script.js"></script>
+
+
+
+
+</body>
+</html>

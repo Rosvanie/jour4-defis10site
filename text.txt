@@ -1,0 +1,22 @@
+/css/
+│
+├── styles.css              # Feuille de style principale (importée dans toutes les pages HTML).
+├── reset.css               # Réinitialisation des styles par défaut des navigateurs.
+├── variables.css           # Variables globales pour les couleurs, les polices, etc.
+├── components/
+│   ├── header.css          # Styles pour le header et la navigation.
+│   ├── footer.css          # Styles pour le footer.
+│   ├── buttons.css         # Styles des boutons et des interactions.
+│   ├── forms.css           # Styles pour les formulaires (contact, recherche).
+│   └── cards.css           # Styles pour les cartes (articles, projets).
+├── pages/
+│   ├── home.css            # Styles spécifiques à la page d'accueil.
+│   ├── about.css           # Styles spécifiques à la page "À propos".
+│   ├── blog.css            # Styles spécifiques à la page de blog (liste d’articles).
+│   ├── post.css            # Styles pour les pages d’articles individuels.
+│   ├── portfolio.css       # Styles spécifiques au portfolio (si inclus).
+│   └── contact.css         # Styles pour la page de contact.
+└── utils/
+    ├── typography.css      # Définition des polices et des tailles de texte.
+    ├── grid.css            # Système de grille ou de layout.
+    └── animations.css      # Animations CSS et transitions.
